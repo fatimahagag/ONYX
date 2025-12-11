@@ -13,7 +13,7 @@ ONYX is a custom-built quadruped robot designed and programmed for Columbia Univ
 
 ## Software
 
-1. servo-test.py
+### 1. servo-test.py
 
 - Credit to Ethan Lipson for this code. (https://github.com/ethanlipson/PyLX-16A)
 - Verify LX-16A servo connections
@@ -21,7 +21,7 @@ ONYX is a custom-built quadruped robot designed and programmed for Columbia Univ
 - Diagnose servo issues before running full walking cycles
 This file was essential for early debugging and ensuring each servo responded correctly.
 
-2. initialize_ONYX.py
+### 2. initialize_ONYX.py
 
 A central setup file that:
 - Sets all servos to their calibrated starting angles
@@ -29,7 +29,7 @@ A central setup file that:
 - Ensures ONYX begins in a safe, neutral pose
 This file is imported and called in every other script to guarantee consistent startup behavior.
 
-3. 8cms.py
+### 3. 8cms.py
    
 The first functional walking gait.
 - Uses diagonal stepping
@@ -38,7 +38,7 @@ The first functional walking gait.
 - Helped identify timing, delay, and balance issues
 This file marks the first time ONYX successfully walked.
 
-4. 15cms.py (final walking code)
+### 4. 15cms.py (final walking code)
 The most stable and fastest gait.
 - Hip and knee move together for smoother motion
 - Improved timing and offset control
